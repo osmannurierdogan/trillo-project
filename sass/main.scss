@@ -1,0 +1,36 @@
+/* @import './base/base';
+@import './components/components';
+@import './layout/layouts'; */
+
+$primary: #eb2f64;
+$primary-light: #FF3366;
+$primary-dark: #BA265D;
+
+$grey-light-1: #faf9f9;
+$grey-light-2: #f4f2f2;
+$grey-light-3: #f0eeee;
+$grey-light-4: #eeeeee;
+
+$grey-dark-1: #333333;
+$grey-dark-2: #777777;
+$grey-dark-3: #999999;
+
+$primary-font-family: 'Open Sans', sans-serif;
+$thin-font-weight: 300;
+$normal-font-weight: 400;
+$bold-font-weight: 600;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: $primary-font-family;
+}
+
+body{
+	font-size: 30px;
+	color: $primary-light;
+	font-weight: $thin-font-weight;
+}
