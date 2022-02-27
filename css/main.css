@@ -46,7 +46,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  min-height: 100vh;
 }
 
 .logo {
@@ -189,6 +188,12 @@ body {
   margin-right: 1rem;
 }
 
+@media only screen and (max-width: 28em) {
+  .user-nav__user-name {
+    visibility: hidden;
+  }
+}
+
 .side-nav {
   list-style: none;
   font-size: 1.4rem;
@@ -289,11 +294,29 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .side-nav__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
   margin-right: 2rem;
   fill: currentColor;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .side-nav__icon {
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .legal {
@@ -338,11 +361,33 @@ body {
   padding: 1.5rem 3rem;
 }
 
+@media only screen and (max-width: 28em) {
+  .overview__heading {
+    letter-spacing: initial;
+    padding: 2.25rem 0.5rem;
+    text-align: center;
+  }
+}
+
 .overview__stars {
   margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .overview__stars {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .overview__stars {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
 }
 
 .overview__icon-star {
@@ -359,6 +404,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .overview__location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .overview__icon-location {
@@ -390,15 +447,33 @@ body {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .overview__rating {
+    padding: 0 1.5rem;
+  }
+}
+
 .overview__rating-average {
   font-size: 2.25rem;
   font-weight: 400;
   margin-bottom: -4px;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .overview__rating-average {
+    font-size: 1.8rem;
+  }
+}
+
 .overview__rating-count {
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .overview__rating-count {
+    font-size: .75rem;
+  }
 }
 
 .button-inline {
@@ -501,6 +576,14 @@ body {
   margin-bottom: 0.7rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .list__item::before {
   content: '';
   display: inline-block;
@@ -582,15 +665,39 @@ body {
           align-items: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .review__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .review__photo {
   height: 4.5rem;
   width: 4.5rem;
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .review__photo {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .review__user-box {
   margin-left: 1.5rem;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .review__user-box {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .review__user-name {
@@ -711,6 +818,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 28em) {
+  .container {
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    max-width: 100vw;
+  }
+}
+
 .header {
   height: 7rem;
   font-size: 1.4rem;
@@ -782,6 +899,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 28em) {
+  .detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .description {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
@@ -797,6 +923,15 @@ body {
   .description {
     padding: 3rem;
     margin-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .description {
+    margin: 0 auto 5rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
