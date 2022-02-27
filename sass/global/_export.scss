@@ -1,0 +1,17 @@
+@import './variables';
+:export {
+	primary: $primary;
+	primary-light: $primary-light;
+	primary-dark: $primary-dark;
+	greyLight1: $grey-light-1;
+	greyLight2: $grey-light-2;
+	greyLight3: $grey-light-3;
+	greyLight4: $grey-light-4;
+	greyDark1: $grey-dark-1;
+	greyDark2: $grey-dark-2;
+	greyDark3: $grey-dark-3;
+	primary-font-family: $primary-font-family;
+	thin-font-weight: $thin-font-weight;
+	normal-font-weight: $normal-font-weight;
+	bold-font-weight: $bold-font-weight;
+}
